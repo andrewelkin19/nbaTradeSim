@@ -24,5 +24,5 @@ for row in teamSalaryTable.find_all("tr")[1:]:
 
 df = pd.DataFrame(rows, columns=headers)
 
-print(df)
+df.to_csv("team_caps_2025.csv", index=False)
 
